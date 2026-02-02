@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>💝 HBD</title>
+  <title>💝 For My Beloved P'แพรว</title>
   <style>
     * {
       box-sizing: border-box;
@@ -24,7 +24,7 @@
       overflow-x: hidden;
       perspective: 1000px;
       animation: gradientFlow 20s ease infinite;
-      padding: 20px;
+      padding: 15px 20px 30px;
       touch-action: manipulation;
       position: relative;
     }
@@ -103,9 +103,10 @@
       align-items: center;
       width: 100%;
       max-width: 900px;
-      gap: 40px;
+      gap: 25px;
       position: relative;
       z-index: 10;
+      padding-bottom: 20px;
     }
 
     /* Love message at top */
@@ -113,7 +114,7 @@
       font-size: clamp(1.2rem, 4vw, 2rem);
       color: #fff;
       text-align: center;
-      padding: 15px 30px;
+      padding: 12px 25px;
       background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(10px);
       border-radius: 50px;
@@ -154,7 +155,7 @@
       position: relative;
       z-index: 5;
       background: linear-gradient(145deg, #ff9a9e, #fad0c4);
-      padding: 15px;
+      padding: 12px;
       animation: borderPulse 4s ease-in-out infinite;
     }
 
@@ -180,9 +181,9 @@
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(10px);
       position: relative;
-      padding: 20px;
+      padding: 15px;
       display: flex;
-      gap: 15px;
+      gap: 12px;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
@@ -190,7 +191,7 @@
 
     /* Individual image container */
     .image-container {
-      flex: 1;
+      flex: 1 1 250px;
       min-width: 250px;
       max-width: 300px;
       aspect-ratio: 3/4;
@@ -338,18 +339,19 @@
       flex-direction: column;
       align-items: center;
       z-index: 10;
+      margin-top: 10px;
     }
 
     /* Instruction text */
     .instruction {
-      font-size: clamp(1rem, 3vw, 1.3rem);
+      font-size: clamp(0.95rem, 3vw, 1.2rem);
       color: #fff;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       text-align: center;
       animation: bounce 2s ease-in-out infinite;
       text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
       background: rgba(255, 255, 255, 0.1);
-      padding: 10px 25px;
+      padding: 10px 20px;
       border-radius: 30px;
       backdrop-filter: blur(5px);
     }
@@ -365,8 +367,8 @@
 
     /* Enhanced gift box */
     .gift-box {
-      width: 60vw;
-      max-width: 280px;
+      width: 55vw;
+      max-width: 240px;
       aspect-ratio: 1/1;
       background: linear-gradient(145deg, #ff6b9d, #ee5a6f, #c44569);
       border-radius: 20px;
@@ -522,13 +524,13 @@
     }
 
     .heart-main {
-      font-size: 5rem;
+      font-size: 4rem;
       animation: heartBeat 1.5s infinite, heartGlow 2s ease-in-out infinite;
       filter: drop-shadow(0 0 20px #ff1744);
     }
 
     .heart-small {
-      font-size: 2rem;
+      font-size: 1.8rem;
       position: absolute;
       animation: heartOrbit 4s linear infinite;
       filter: drop-shadow(0 0 10px #ff69b4);
@@ -565,24 +567,24 @@
 
     @keyframes heartOrbit {
       0% {
-        transform: rotate(0deg) translateX(60px) rotate(0deg);
+        transform: rotate(0deg) translateX(50px) rotate(0deg);
       }
       100% {
-        transform: rotate(360deg) translateX(60px) rotate(-360deg);
+        transform: rotate(360deg) translateX(50px) rotate(-360deg);
       }
     }
 
     /* Romantic messages */
     .message {
-      margin-top: 25px;
-      font-size: clamp(2rem, 8vw, 4rem);
+      margin-top: 20px;
+      font-size: clamp(1.8rem, 7vw, 3.5rem);
       color: #fff;
       text-shadow: 0 4px 15px rgba(255, 20, 147, 0.6),
                    0 0 20px rgba(255, 255, 255, 0.8);
       opacity: 0;
       transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       text-align: center;
-      padding: 0 20px;
+      padding: 0 15px;
       transform: translateY(40px) scale(0.8);
       max-width: 90%;
       font-weight: bold;
@@ -608,15 +610,15 @@
     }
 
     .sub-message {
-      font-size: clamp(1rem, 3vw, 1.5rem);
-      margin-top: 15px;
+      font-size: clamp(0.95rem, 3vw, 1.4rem);
+      margin-top: 12px;
       color: #fff;
       text-shadow: 0 2px 10px rgba(255, 105, 180, 0.5);
       opacity: 0;
       transition: opacity 1s ease-out 1.5s;
       font-style: italic;
       background: rgba(255, 255, 255, 0.1);
-      padding: 10px 20px;
+      padding: 10px 18px;
       border-radius: 20px;
       backdrop-filter: blur(5px);
     }
@@ -740,10 +742,10 @@
     /* Music control button */
     .music-control {
       position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 60px;
-      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      width: 55px;
+      height: 55px;
       background: linear-gradient(145deg, rgba(255, 105, 180, 0.95), rgba(255, 20, 147, 0.95));
       border: 3px solid rgba(255, 255, 255, 0.5);
       border-radius: 50%;
@@ -763,7 +765,7 @@
     }
 
     .music-control i {
-      font-size: 24px;
+      font-size: 22px;
       color: white;
       text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
@@ -792,29 +794,108 @@
 
     /* Responsive */
     @media (max-width: 768px) {
+      body {
+        padding: 10px 15px 25px;
+      }
+
+      .main-container {
+        gap: 20px;
+      }
+
       .gallery-inner {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        padding: 12px;
       }
       
       .image-container {
-        max-width: 90%;
-        min-width: 80%;
+        max-width: 100%;
+        min-width: 100%;
+        flex: 1 1 100%;
       }
       
       .gift-box {
-        max-width: 220px;
+        max-width: 200px;
+        width: 50vw;
       }
       
       .heart-main {
-        font-size: 4rem;
+        font-size: 3.5rem;
+      }
+
+      .heart-small {
+        font-size: 1.5rem;
+      }
+
+      @keyframes heartOrbit {
+        0% {
+          transform: rotate(0deg) translateX(40px) rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg) translateX(40px) rotate(-360deg);
+        }
+      }
+
+      .gift-container {
+        margin-top: 5px;
+      }
+
+      .instruction {
+        font-size: 1rem;
+        padding: 8px 18px;
+        margin-bottom: 12px;
+      }
+
+      .message {
+        margin-top: 15px;
+        font-size: clamp(1.6rem, 6vw, 2.5rem);
+      }
+
+      .sub-message {
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+        margin-top: 10px;
+        padding: 8px 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .main-container {
+        gap: 18px;
+      }
+
+      .top-message {
+        font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+        padding: 10px 20px;
+      }
+
+      .images-gallery {
+        padding: 10px;
+      }
+
+      .gallery-inner {
+        padding: 10px;
+        gap: 12px;
+      }
+
+      .image-container {
+        min-width: 100%;
+        border-radius: 15px;
+      }
+
+      .gift-box {
+        width: 45vw;
+        max-width: 180px;
+      }
+
+      .instruction {
+        font-size: 0.95rem;
       }
 
       .music-control {
-        bottom: 20px;
-        right: 20px;
         width: 50px;
         height: 50px;
+        bottom: 15px;
+        right: 15px;
       }
 
       .music-control i {
@@ -822,9 +903,15 @@
       }
     }
 
-    @media (max-width: 480px) {
+    @media (min-width: 769px) {
+      .gallery-inner {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
       .image-container {
-        min-width: 85%;
+        flex: 1 1 calc(33.333% - 12px);
+        max-width: calc(33.333% - 12px);
       }
     }
   </style>
@@ -854,21 +941,21 @@
     <div class="images-gallery" id="imagesGallery">
       <div class="gallery-inner">
         <div class="image-container">
-          <img src="D1.jpg" alt="Memory 1" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect fill=\'%23ff9a9e\' width=\'300\' height=\'400\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\' fill=\'white\'%3E💖 D1 💖%3C/text%3E%3C/svg%3E'">
+          <img src="D1.png" alt="Memory 1" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect fill=\'%23ff9a9e\' width=\'300\' height=\'400\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\' fill=\'white\'%3E💖 D1 💖%3C/text%3E%3C/svg%3E'">
           <div class="image-frame"></div>
           <div class="image-heart">💕</div>
           <div class="image-label">Memory 1</div>
         </div>
         
         <div class="image-container">
-          <img src="D2.jpg" alt="Memory 2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect fill=\'%23fecfef\' width=\'300\' height=\'400\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\' fill=\'white\'%3E💖 D2 💖%3C/text%3E%3C/svg%3E'">
+          <img src="D2.png" alt="Memory 2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect fill=\'%23fecfef\' width=\'300\' height=\'400\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\' fill=\'white\'%3E💖 D2 💖%3C/text%3E%3C/svg%3E'">
           <div class="image-frame"></div>
           <div class="image-heart">💗</div>
           <div class="image-label">Memory 2</div>
         </div>
         
         <div class="image-container">
-          <img src="D3.jpg" alt="Memory 3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect fill=\'%23ff6b95\' width=\'300\' height=\'400\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\' fill=\'white\'%3E💖 D3 💖%3C/text%3E%3C/svg%3E'">
+          <img src="D3.png" alt="Memory 3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'400\'%3E%3Crect fill=\'%23ff6b95\' width=\'300\' height=\'400\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\' fill=\'white\'%3E💖 D3 💖%3C/text%3E%3C/svg%3E'">
           <div class="image-frame"></div>
           <div class="image-heart">💝</div>
           <div class="image-label">Memory 3</div>
@@ -1075,7 +1162,7 @@
         if (isOpened) {
           createConfetti();
           createRosePetals();
-          autoPlayMusic(); // เริ่มเล่นเพลงเมื่อเปิดกล่อง
+          autoPlayMusic();
           
           setTimeout(() => {
             imagesGallery.classList.add('show');
